@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновить" id="89">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="90"/>
+			</Button>
+			<ButtonGroup name="ФормаДеревоМетаданных1СДействия" id="97">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ДеревоМетаданных1С</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Item.ДеревоМетаданных1С</CommandSource>
+				<ExtendedTooltip name="ФормаДеревоМетаданных1СДействияРасширеннаяПодсказка" id="98"/>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<CheckBoxField name="ИменаБазыДанных" id="30">
+			<DataPath>Объект.ИменаБазыДанных</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИменаБазыДанныхКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ИменаБазыДанныхРасширеннаяПодсказка" id="32"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаЭлементов" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа элементов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа элементов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЭлементовРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДерево" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДеревоРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<Table name="ДеревоМетаданных1С" id="3">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоМетаданных1С</DataPath>
+							<ContextMenu name="ДеревоМетаданных1СКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="ДеревоМетаданных1СКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоМетаданных1СРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="ДеревоМетаданных1ССтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1С</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1ССтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="ДеревоМетаданных1ССтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданных1ССостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1С</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1ССостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="ДеревоМетаданных1ССостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданных1СУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1С</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ГруппаСтроки" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ГруппаСтрокиРасширеннаяПодсказка" id="29"/>
+									<ChildItems>
+										<PictureField name="ДеревоМетаданных1СКартинка" id="25">
+											<DataPath>ДеревоМетаданных1С.Картинка</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоМетаданных1СКартинкаКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ДеревоМетаданных1СКартинкаРасширеннаяПодсказка" id="27"/>
+										</PictureField>
+										<InputField name="ДеревоМетаданных1СПредставление" id="36">
+											<DataPath>ДеревоМетаданных1С.Представление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоМетаданных1СПредставлениеКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ДеревоМетаданных1СПредставлениеРасширеннаяПодсказка" id="38"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоМетаданных1СТипДанных1" id="94">
+									<DataPath>ДеревоМетаданных1С.ТипДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СТипДанных1КонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СТипДанных1РасширеннаяПодсказка" id="96"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСвойства" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа свойства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа свойства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСвойстваРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="ДеревоМетаданных1СИмяПоляХранения" id="33">
+							<DataPath>Items.ДеревоМетаданных1С.CurrentData.ИмяПоляХранения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ДеревоМетаданных1СИмяПоляХраненияКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ДеревоМетаданных1СИмяПоляХраненияРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="ДеревоМетаданных1ССиноним" id="19">
+							<DataPath>Items.ДеревоМетаданных1С.CurrentData.Синоним</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ДеревоМетаданных1ССинонимКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДеревоМетаданных1ССинонимРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ДеревоМетаданных1СКомментарий" id="22">
+							<DataPath>Items.ДеревоМетаданных1С.CurrentData.Комментарий</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ДеревоМетаданных1СКомментарийКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ДеревоМетаданных1СКомментарийРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<Table name="ДеревоМетаданных1СПоля" id="45">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Items.ДеревоМетаданных1С.CurrentData.Поля</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДеревоМетаданных1СПоляКонтекстноеМеню" id="46"/>
+							<AutoCommandBar name="ДеревоМетаданных1СПоляКоманднаяПанель" id="47">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоМетаданных1СПоляРасширеннаяПодсказка" id="48"/>
+							<SearchStringAddition name="ДеревоМетаданных1СПоляСтрокаПоиска" id="49">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СПоля</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СПоляСтрокаПоискаКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СПоляСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданных1СПоляСостояниеПросмотра" id="52">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СПоля</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СПоляСостояниеПросмотраКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СПоляСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданных1СПоляУправлениеПоиском" id="55">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СПоля</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СПоляУправлениеПоискомКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СПоляУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДеревоМетаданных1СПоляИмяПоля" id="58">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Поля.ИмяПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СПоляИмяПоляКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СПоляИмяПоляРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ДеревоМетаданных1СПоляИмяПоляХранения" id="61">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Поля.ИмяПоляХранения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СПоляИмяПоляХраненияКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СПоляИмяПоляХраненияРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="ДеревоМетаданных1СПоляМетаданные" id="64">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Поля.Метаданные</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СПоляМетаданныеКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СПоляМетаданныеРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ДеревоМетаданных1СИндексы" id="67">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Items.ДеревоМетаданных1С.CurrentData.Индексы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДеревоМетаданных1СИндексыКонтекстноеМеню" id="68"/>
+							<AutoCommandBar name="ДеревоМетаданных1СИндексыКоманднаяПанель" id="69">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоМетаданных1СИндексыРасширеннаяПодсказка" id="70"/>
+							<SearchStringAddition name="ДеревоМетаданных1СИндексыСтрокаПоиска" id="71">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СИндексы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СИндексыСтрокаПоискаКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СИндексыСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданных1СИндексыСостояниеПросмотра" id="74">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СИндексы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СИндексыСостояниеПросмотраКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СИндексыСостояниеПросмотраРасширеннаяПодсказка" id="76"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданных1СИндексыУправлениеПоиском" id="77">
+								<AdditionSource>
+									<Item>ДеревоМетаданных1СИндексы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданных1СИндексыУправлениеПоискомКонтекстноеМеню" id="78"/>
+								<ExtendedTooltip name="ДеревоМетаданных1СИндексыУправлениеПоискомРасширеннаяПодсказка" id="79"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДеревоМетаданных1СИндексыИмяПоля" id="80">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Индексы.ИмяПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СИндексыИмяПоляКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СИндексыИмяПоляРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ДеревоМетаданных1СИндексыИмяПоляХранения" id="83">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Индексы.ИмяПоляХранения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СИндексыИмяПоляХраненияКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СИндексыИмяПоляХраненияРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ДеревоМетаданных1СИндексыМетаданные" id="86">
+									<DataPath>Items.ДеревоМетаданных1С.CurrentData.Индексы.Метаданные</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданных1СИндексыМетаданныеКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ДеревоМетаданных1СИндексыМетаданныеРасширеннаяПодсказка" id="88"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ПолучитьСтруктуруХраненияБазыДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоМетаданных1С" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяПоляХранения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя поля хранения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Поля" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Назначение" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Индексы" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипДанных" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ДеревоМетаданных1С.Поля">
+					<Column name="ИмяПоля" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя поля</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ИмяПоляХранения" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя поля хранения</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Метаданные" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Метаданные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="ДеревоМетаданных1С.Индексы">
+					<Column name="ИмяПоля" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя поля</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ИмяПоляХранения" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя поля хранения</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Метаданные" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Метаданные</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>
